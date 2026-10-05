@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../includes/auth.php';require_login('admin');if($_SERVER['REQUEST_METHOD']!=='POST')redirect('admin/payments/index.php');verify_csrf();redirect('admin/payments/view.php?id='.(int)($_POST['id']??0));

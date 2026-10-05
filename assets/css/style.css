@@ -1,0 +1,272 @@
+ :root{--teal:#0f766e;--teal-dark:#115e59;--ink:#102a2a;--muted:#6b7b7b;--bg:#f5f8f8;--card:#fff;--border:#e5ecec}*{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none}.text-teal{color:var(--teal)}.btn-teal{background:var(--teal);color:#fff;border-color:var(--teal)}.btn-teal:hover{background:var(--teal-dark);color:#fff}.btn-outline-teal{border-color:var(--teal);color:var(--teal)}.btn-outline-teal:hover{background:var(--teal);color:#fff}.hero{background:linear-gradient(135deg,#e7f6f3,#fff);padding:40px 0 20px}.hero h1{font-size:clamp(2.4rem,5vw,4.8rem);font-weight:800;letter-spacing:-.04em}.eyebrow,.section-head span{font-size:.78rem;font-weight:800;letter-spacing:.15em;color:var(--teal)}.hero-card,.soft-card,.service-card,.panel,.stat-card,.cta-box{background:#fff;border:1px solid var(--border);border-radius:22px;box-shadow:0 12px 35px rgba(15,118,110,.07)}.hero-card{padding:35px}.hero-card>i{font-size:2.5rem;color:var(--teal)}.mini-check{padding:8px 0}.mini-check i{color:var(--teal)}.section-head{margin-bottom:28px}.section-head h1,.section-head h2{font-weight:800;letter-spacing:-.03em}.stat-card{padding:22px}.stat-card strong{display:block;font-size:2rem}.stat-card span{color:var(--muted)}.service-card{padding:25px}.service-icon{width:48px;height:48px;border-radius:14px;background:#e7f6f3;color:var(--teal);display:grid;place-items:center;font-size:1.4rem;margin-bottom:18px}.steps>div{display:flex;gap:16px;margin-bottom:20px}.steps b{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;flex:0 0 auto}.cta-box{background:var(--teal);color:#fff;padding:45px}.footer{background:#fff;border-top:1px solid var(--border)}.auth-page{min-height:75vh;display:grid;place-items:center;padding:40px 16px}.auth-card{width:min(560px,100%);background:#fff;padding:35px;border:1px solid var(--border);border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.08)}label{font-weight:600;margin-bottom:7px}.form-control,.form-select{border-radius:12px;padding:.75rem;border-color:#dbe5e5}.empty-state{text-align:center;padding:60px;background:#fff;border-radius:20px;color:var(--muted)}
+/* =========================================================
+   FEATURED SERVICE LOCATION
+========================================================= */
+
+.featured-location {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.featured-intro {
+    max-width: 680px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Main project card */
+
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(15, 118, 110, .10);
+}
+
+/* Image */
+
+.featured-image {
+    position: relative;
+    min-height: 520px;
+    overflow: hidden;
+    background: #e9eeee;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    display: block;
+    transition: transform .6s ease;
+}
+
+.featured-project:hover .featured-image img {
+    transform: scale(1.035);
+}
+
+/* Location badge */
+
+.image-badge {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 11px 17px;
+
+    color: #ffffff;
+    background: rgba(15, 118, 110, .94);
+
+    border-radius: 999px;
+
+    font-size: .85rem;
+    font-weight: 700;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.image-badge i {
+    font-size: 1rem;
+}
+
+/* Content */
+
+.featured-content {
+    padding: 52px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-label {
+    display: inline-block;
+
+    color: var(--teal);
+
+    font-size: .75rem;
+    font-weight: 800;
+
+    letter-spacing: .16em;
+
+    margin-bottom: 14px;
+}
+
+.featured-content h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    letter-spacing: -.04em;
+
+    margin-bottom: 14px;
+}
+
+.project-location {
+    color: var(--muted);
+
+    font-size: .95rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 0;
+}
+
+.project-location i {
+    color: var(--teal);
+}
+
+.project-divider {
+    width: 55px;
+    height: 4px;
+
+    background: var(--teal);
+
+    border-radius: 10px;
+
+    margin: 25px 0;
+}
+
+.project-text {
+    color: #536363;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+/* Highlights */
+
+.project-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+
+    margin-bottom: 30px;
+}
+
+.project-highlights div {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: .88rem;
+    font-weight: 600;
+
+    color: var(--ink);
+}
+
+.project-highlights i {
+    color: var(--teal);
+
+    font-size: 1rem;
+}
+
+/* Inspirational quote */
+
+.project-quote {
+    position: relative;
+
+    padding: 24px;
+
+    background: #f3faf8;
+
+    border-left: 4px solid var(--teal);
+
+    border-radius: 0 16px 16px 0;
+}
+
+.project-quote > i {
+    color: var(--teal);
+
+    font-size: 1.5rem;
+
+    opacity: .7;
+}
+
+.project-quote p {
+    margin: 8px 0 10px;
+
+    font-size: .95rem;
+
+    line-height: 1.7;
+
+    font-weight: 600;
+
+    color: var(--ink);
+}
+
+.project-quote span {
+    color: var(--muted);
+
+    font-size: .78rem;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .featured-project {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image {
+        min-height: 400px;
+    }
+
+    .featured-image img {
+        min-height: 400px;
+    }
+
+    .featured-content {
+        padding: 40px 32px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .featured-image {
+        min-height: 300px;
+    }
+
+    .featured-image img {
+        min-height: 300px;
+    }
+
+    .featured-content {
+        padding: 32px 22px;
+    }
+
+    .featured-content h3 {
+        font-size: 2rem;
+    }
+
+    .project-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .image-badge {
+        left: 15px;
+        bottom: 15px;
+    }
+
+}

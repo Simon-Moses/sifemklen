@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-confirm]').forEach(el=>el.addEventListener('click',e=>{if(!confirm(el.dataset.confirm))e.preventDefault()}));setTimeout(()=>document.querySelectorAll('.alert').forEach(a=>{try{bootstrap.Alert.getOrCreateInstance(a).close()}catch(e){} }),6000);});

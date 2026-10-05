@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../includes/auth.php';require_login('admin');$id=(int)($_GET['id']??0);$s=$pdo->prepare("UPDATE staff SET status='Inactive' WHERE id=?");$s->execute([$id]);log_activity('Staff deletion','Staff '.$id.' deactivated.');redirect('admin/staff/index.php');

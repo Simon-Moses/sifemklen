@@ -1,0 +1,7 @@
+<?php
+$pageTitle='About SIFEMKLEN';
+require 'includes/header.php';
+require 'includes/navbar.php';
+?><main class="container py-5"><div class="section-head"><span>ABOUT US</span><h1>Professional care for the spaces that matter.</h1></div><div class="row g-5"><div class="col-lg-7"><p class="lead">SIFEMKLEN provides dependable cleaning and laundry services with a focus on quality, scheduling and customer satisfaction.</p><p>Our management platform connects customers, bookings, services, staff assignments and payments in one workflow, replacing scattered manual records with a structured digital system.</p></div><div class="col-lg-5"><div class="soft-card"><h5>Why choose us?</h5><ul class="list-unstyled mb-0"><li class="py-2"><i class="bi bi-check-circle text-success"></i> Professional team</li><li class="py-2"><i class="bi bi-check-circle text-success"></i> Reliable service</li><li class="py-2"><i class="bi bi-check-circle text-success"></i> Affordable pricing</li><li class="py-2"><i class="bi bi-check-circle text-success"></i> Flexible scheduling</li><li class="py-2"><i class="bi bi-check-circle text-success"></i> Quality results</li></ul></div></div></div></main><?php
+require 'includes/footer.php';
+?>
